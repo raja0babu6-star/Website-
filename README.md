@@ -1,18 +1,25 @@
-# Moonshot-inspired static website
+# Moonshot-inspired Creator Studio
 
-An independent front-end recreation inspired by the public MakeMoonshot landing page. It is not affiliated with Moonshot and does not use their private source code.
+An independent, front-end recreation inspired by the public MakeMoonshot landing page. It is not affiliated with Moonshot and does not use their private source code.
 
-## Publish on GitHub Pages
+## Features
+- Responsive dark creator-studio layout
+- Filterable creative style gallery with selectable styles
+- Local video/audio selection, drag-and-drop, and in-browser preview
+- Optional caption overlay preview
+- Keyboard focus states and reduced-motion support
+- SEO/social metadata and accessible status messages
 
-The website files are ready in the repository root. To publish:
+## Run locally
+Open `index.html` in a modern browser. All files are static; no package install is required.
 
-1. Open [Repository Settings → Pages](https://github.com/raja0babu6-star/Website-/settings/pages).
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then click **Save**.
-4. Wait a few minutes and visit **https://raja0babu6-star.github.io/Website-/**.
+## Publish with GitHub Pages
+1. Open [Settings → Pages](https://github.com/raja0babu6-star/Website-/settings/pages).
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
+3. Commit or push to `main` (the deployment workflow runs automatically), or run **Deploy static site to GitHub Pages** from the Actions tab.
+4. When the workflow succeeds, visit: https://raja0babu6-star.github.io/Website-/
 
-GitHub Pages configuration could not be switched automatically because the connected GitHub integration was denied the Pages site creation permission. The branch-based publishing option above does not need a deployment workflow.
+If GitHub Actions cannot deploy, check that Pages is enabled for this public repository and that the Pages source is set to **GitHub Actions**. A one-time change in Settings may be required; repository integration permissions do not expose the Pages configuration endpoint.
 
-## Demo limitations
-
-This is a static front-end. The file picker selects a video/audio file locally and displays its name; it does not upload, process, or export it. Real AI editing, user accounts, cloud storage, and payment functionality need a secure backend and provider APIs.
+## Demo limitations and privacy
+This is a static front-end, not a complete AI editing product. Files are previewed locally in your browser and are not uploaded by this demo. AI editing, transcription, cloud storage, accounts, checkout, and video export require secure backend services and provider APIs. Do not add API keys or secrets to client-side files.
