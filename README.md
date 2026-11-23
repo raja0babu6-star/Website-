@@ -2,17 +2,16 @@
 
 An independent front-end recreation inspired by the public MakeMoonshot landing page. It is not affiliated with Moonshot and does not use their private source code.
 
-## Live site
+## Publish on GitHub Pages
 
-After the first successful GitHub Actions deployment, the site should be available at:
+The website files are ready in the repository root. To publish:
 
-https://raja0babu6-star.github.io/Website-/
+1. Open [Repository Settings → Pages](https://github.com/raja0babu6-star/Website-/settings/pages).
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Select branch **main** and folder **/(root)**, then click **Save**.
+4. Wait a few minutes and visit **https://raja0babu6-star.github.io/Website-/**.
 
-## Deployment
-
-The repository includes `.github/workflows/pages.yml`. It deploys the contents of the repository to GitHub Pages whenever changes are pushed to `main`, and can also be started manually from **Actions → Deploy website to GitHub Pages → Run workflow**. The workflow attempts to enable Pages automatically.
-
-If GitHub blocks the first deployment, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source, then re-run the workflow.
+GitHub Pages configuration could not be switched automatically because the connected GitHub integration was denied the Pages site creation permission. The branch-based publishing option above does not need a deployment workflow.
 
 ## Demo limitations
 
